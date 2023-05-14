@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Player</title>
+    <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
 
     <!--Load Fonts & Style-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -14,7 +15,7 @@
     <div class="player">
         <!--Details Section-->
         <div class="details-sec">
-            <div class="track-art"><img src="https://picsum.photos/200"></div>
+            <image class="track-art"></image>
             <div class="track-name">Track Name</div>
             <div class="track-artist">Track Artist</div>
         </div>
@@ -39,7 +40,7 @@
         <!--Volume Slider Section-->
         <div class="slider-container">
             <i class="fa fa-volume-down"></i>
-            <input type="range" min="0" max="100" value="99" class="volume-slider" onchange="setVolume()">
+            <input type="range" min="0" max="100" value="50" class="volume-slider" onchange="setVolume()">
             <i class="fa fa-volume-up"></i>
         </div>
     </div>
