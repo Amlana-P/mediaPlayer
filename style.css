@@ -21,6 +21,7 @@ body {
 
 .track-art img {
     margin: 25px;
+    margin-top: 25%;
     height: 200px;
     width: 200px;
     background-size: cover;
