@@ -1,0 +1,117 @@
+body {
+    background-color: lightgreen;
+    transition: background-color .8s;
+}
+
+.player {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-sec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.track-art img {
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+
+.now-playing {
+    font-size: 1rem;
+}
+
+.track-name {
+    font-size: 3rem;
+}
+
+.track-artist {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.prev-track, .play-pause-track, .next-track {
+    padding: 25px;
+    opacity: 0.8;  
+    transition: opacity 0.2s; 
+}
+
+.prev-track:hover, .play-pause-track:hover, .next-track:hover { 
+    opacity: 1; 
+}
+
+.slider-container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seek-slider, .volume-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .seek-slider::-webkit-slider-thumb,
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek-slider:hover,
+.volume-slider:hover {
+  opacity: 1.0;
+}
+
+.seek-slider {
+    width: 60%;
+}
+   
+.volume-slider {
+width: 30%;
+}
+
+.current-time, .total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
