@@ -20,7 +20,7 @@ let currTrack = document.createElement('audio');
 let trackList = [
     {
         name: "Futuristic Beat",
-        artist: "Lemon Music",
+        artist: "Royalty Free Music",
         image: "./media/IUID1.jpg",
         path: "./media/futuristic-beat.mp3"
     },
@@ -32,7 +32,7 @@ let trackList = [
     },
     {
         name: "Waterfall",
-        artist: "Lemon",
+        artist: "Roman Senyk Music",
         image: "./media/IUID3.jpg",
         path: "./media/waterfall.mp3"
     }
