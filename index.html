@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+
+    <!--Load Fonts & Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <!--Details Section-->
+        <div class="details-sec">
+            <div class="now-playing">Playing x of y</div>
+            <div class="track-art"><img src="https://picsum.photos/200"></div>
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Track Artist</div>
+        </div>
+        <!--Buttons Section-->
+        <div class="buttons">
+            <div class="prev-track" onclick="prevTrack()">
+                <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="play-pause-track" onclick="playPauseTrack()">
+                <i class="fa fa-play-circle fa-5x"></i>
+            </div>
+            <div class="next-track" onclick="nextTrack()">
+                <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+        <!--Seek Slider Section-->
+        <div class="slider-container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="0" max="100" value="50" class="seek-slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
+        <!--Volume Slider Section-->
+        <div class="slider-container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="0" max="100" value="99" class="volume-slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </div>
+
+    <!--Load JS Script-->
+    <script src="main.js"></script>
+</body>
+</html>
